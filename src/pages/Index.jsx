@@ -64,11 +64,26 @@ const Index = () => {
         </Heading>
         <CheckboxGroup colorScheme="green">
           <Stack spacing={[1, 5]} direction={["column", "row"]}>
-            <Checkbox value="Elderly Institutionalized Patients">Elderly Institutionalized Patients</Checkbox>
-            <Checkbox value="Chronic Diseases">Chronic Diseases</Checkbox>
-            <Checkbox value="Cardiopathies and Hypertension">Cardiopathies and Hypertension</Checkbox>
-            <Checkbox value="Chronic Pulmonary Diseases">Chronic Pulmonary Diseases</Checkbox>
-            {/* ... other checkboxes */}
+            <Checkbox value="Pacientes institucionalizados edad avanzada">Pacientes institucionalizados edad avanzada</Checkbox>
+            <Checkbox value="Enfermedades crónicas">Enfermedades crónicas</Checkbox>
+            <Checkbox value="Cardiopatías e hipertensión">Cardiopatías e hipertensión</Checkbox>
+            <Checkbox value="Enfermedades pulmonares crónicas">Enfermedades pulmonares crónicas</Checkbox>
+            <Checkbox value="Diabetes">Diabetes</Checkbox>
+            <Checkbox value="Trasplante de órgano sólido y/o líquido">Trasplante de órgano sólido y/o líquido</Checkbox>
+            <Checkbox value="Secundaria">Inmunosupresión secundaria</Checkbox>
+            <Checkbox value="Primaria">Inmunosupresión primaria</Checkbox>
+            <Checkbox value="Enfermedad autoinmune">Enfermedad autoinmune</Checkbox>
+            <Checkbox value="Cáncer">Cáncer</Checkbox>
+            <Checkbox value="Hipercolesterolemia y/o obesidad mórbida">Hipercolesterolemia y/o obesidad mórbida</Checkbox>
+            <Checkbox value="Niño nacido pre-término">Niño nacido pre-término</Checkbox>
+            <Checkbox value="Edad avanzada">Edad avanzada</Checkbox>
+            <Checkbox value="Paciente con eventos adversos tras inmunización">Paciente con eventos adversos tras inmunización</Checkbox>
+            <Checkbox value="Paciente con riesgo ocupacional">Paciente con riesgo ocupacional</Checkbox>
+            <Checkbox value="Paciente que va a viajar">Paciente que va a viajar</Checkbox>
+            <Checkbox value="Embarazo y/o lactancia">Embarazo y/o lactancia</Checkbox>
+            <Checkbox value="Reclusos, uso de drogas por vía parenteral, trabajadores sexuales">Reclusos, uso de drogas por vía parenteral, trabajadores sexuales</Checkbox>
+            <Checkbox value="Hombres que tienen sexo con hombres">Hombres que tienen sexo con hombres</Checkbox>
+            <Checkbox value="Receptores de inmunoglobulinas y derivados sanguíneos">Receptores de inmunoglobulinas y derivados sanguíneos</Checkbox>
           </Stack>
         </CheckboxGroup>
       </Box>
