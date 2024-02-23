@@ -1,5 +1,5 @@
 // Import Chakra UI components and icons
-import { Box, Flex, Divider, Heading, Text, Select, Checkbox, CheckboxGroup, Stack, Button, Link, useToast } from "@chakra-ui/react";
+import { Box, Flex, Divider, Heading, Text, Select, Checkbox, CheckboxGroup, Stack, Button, Link, useToast, Input } from "@chakra-ui/react";
 import { FaSyringe, FaNotesMedical, FaUserMd } from "react-icons/fa";
 
 const Index = () => {
@@ -42,19 +42,55 @@ const Index = () => {
         <Heading as="h2" size="lg" mb={4}>
           Datos Demográficos del Paciente
         </Heading>
-        <CheckboxGroup colorScheme="green">
-          <Stack spacing={[1, 5]} direction={["column", "row"]}>
-            <Checkbox value="Male">Varón</Checkbox>
-            <Checkbox value="Female">Mujer</Checkbox>
-            <Checkbox value="Caucasian">Caucásico</Checkbox>
-            <Checkbox value="Black">Negro</Checkbox>
-            <Checkbox value="Asian">Asiático</Checkbox>
-            <Checkbox value="Mixed">Mestizo</Checkbox>
-          </Stack>
-        </CheckboxGroup>
-        <Select placeholder="Patient's Origin" mt={4}>
-          <option>Resident</option>
-          <option>Foreigner</option>
+        <Flex direction={["column", "row"]} align="center" justify="space-between" wrap="wrap">
+          <CheckboxGroup colorScheme="green" mb={4}>
+            <Stack spacing={[1, 5]} direction={["column", "row"]}>
+              <Checkbox value="Male">Varón</Checkbox>
+              <Checkbox value="Female">Mujer</Checkbox>
+              <Checkbox value="Caucasian">Caucásico</Checkbox>
+              <Checkbox value="Black">Negro</Checkbox>
+              <Checkbox value="Asian">Asiático</Checkbox>
+              <Checkbox value="Mixed">Mestizo</Checkbox>
+            </Stack>
+          </CheckboxGroup>
+          <Box>
+            <Text mb={2}>Edad:</Text>
+            <Input placeholder="Introduzca la edad del paciente" />
+          </Box>
+        </Flex>
+        <Select placeholder="Origen del Paciente" mt={4}>
+          <option value="Resident">Residente</option>
+          {/* Agregar desplegable para las comunidades autónomas */}
+          <Select placeholder="Comunidad Autónoma" mt={2}>
+            <option value="Andalucía">Andalucía</option>
+            <option value="Aragón">Aragón</option>
+            <option value="Asturias">Asturias</option>
+            <option value="Baleares">Baleares</option>
+            <option value="Canarias">Canarias</option>
+            <option value="Cantabria">Cantabria</option>
+            <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+            <option value="Castilla y León">Castilla y León</option>
+            <option value="Cataluña">Cataluña</option>
+            <option value="Ceuta">Ceuta</option>
+            <option value="Comunidad Valenciana">Comunidad Valenciana</option>
+            <option value="Extremadura">Extremadura</option>
+            <option value="Galicia">Galicia</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Melilla">Melilla</option>
+            <option value="Murcia">Murcia</option>
+            <option value="Navarra">Navarra</option>
+            <option value="País Vasco">País Vasco</option>
+            <option value="La Rioja">La Rioja</option>
+          </Select>
+          <option value="Foreigner">Extranjero</option>
+          {/* Agregar desplegable para las opciones de continente */}
+          <Select placeholder="Continente" mt={2}>
+            <option value="Africa">África</option>
+            <option value="America">América</option>
+            <option value="Asia">Asia</option>
+            <option value="Europa">Europa</option>
+            <option value="Oceania">Oceanía</option>
+          </Select>
         </Select>
       </Box>
 
