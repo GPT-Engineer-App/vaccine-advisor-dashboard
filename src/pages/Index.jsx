@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <Box p={8}>
       <Heading as="h1" size="xl" mb={6}>
-        <FaSyringe /> Vaccine Advisory Dashboard
+        <FaSyringe /> Tablero de Asesoramiento de Vacunas
       </Heading>
       <Divider mb={6} />
 
@@ -27,29 +27,29 @@ const Index = () => {
         <Heading as="h2" size="lg" mb={4}>
           <FaUserMd /> Professional Profile
         </Heading>
-        <Select placeholder="Select professional profile">
-          <option>Unit of Preventive Medicine and Public Health</option>
-          <option>International Vaccination Center</option>
-          <option>Public Health Manager</option>
-          <option>Primary Care</option>
-          <option>Occupational Risk Prevention</option>
-          <option>Scientific Society</option>
-          <option>Pharmaceutical Industry</option>
+        <Select placeholder="Seleccione el perfil profesional">
+          <option>Unidad de Medicina Preventiva y Salud Pública</option>
+          <option>Centro Internacional de Vacunación</option>
+          <option>Gestor de Salud Pública</option>
+          <option>Atención Primaria</option>
+          <option>Prevención de Riesgos Laborales</option>
+          <option>Sociedad Científica</option>
+          <option>Industria Farmacéutica</option>
         </Select>
       </Box>
 
       <Box mb={6}>
         <Heading as="h2" size="lg" mb={4}>
-          Patient Demographics
+          Datos Demográficos del Paciente
         </Heading>
         <CheckboxGroup colorScheme="green">
           <Stack spacing={[1, 5]} direction={["column", "row"]}>
-            <Checkbox value="Male">Male</Checkbox>
-            <Checkbox value="Female">Female</Checkbox>
-            <Checkbox value="Caucasian">Caucasian</Checkbox>
-            <Checkbox value="Black">Black</Checkbox>
-            <Checkbox value="Asian">Asian</Checkbox>
-            <Checkbox value="Mixed">Mixed</Checkbox>
+            <Checkbox value="Male">Varón</Checkbox>
+            <Checkbox value="Female">Mujer</Checkbox>
+            <Checkbox value="Caucasian">Caucásico</Checkbox>
+            <Checkbox value="Black">Negro</Checkbox>
+            <Checkbox value="Asian">Asiático</Checkbox>
+            <Checkbox value="Mixed">Mestizo</Checkbox>
           </Stack>
         </CheckboxGroup>
         <Select placeholder="Patient's Origin" mt={4}>
@@ -60,7 +60,7 @@ const Index = () => {
 
       <Box mb={6}>
         <Heading as="h2" size="lg" mb={4}>
-          Risk Factors
+          Factores de Riesgo
         </Heading>
         <CheckboxGroup colorScheme="green">
           <Stack spacing={[1, 5]} direction={["column", "row"]}>
@@ -75,20 +75,20 @@ const Index = () => {
 
       <Box mb={6}>
         <Button colorScheme="teal" size="lg" leftIcon={<FaNotesMedical />} onClick={handleVaccineRecommendation}>
-          Generate Vaccine Recommendations
+          Generar Recomendaciones de Vacunación
         </Button>
       </Box>
 
       <Box mb={6}>
-        <Text fontSize="md">The vaccine recommendations are based on the latest clinical guidelines for each autonomous community. Always refer to the official sources for the most up-to-date information.</Text>
+        <Text fontSize="md">Las recomendaciones de vacunación se basan en las últimas guías clínicas para cada comunidad autónoma. Consulte siempre las fuentes oficiales para obtener la información más actualizada.</Text>
         <Link href="https://cima.aemps.es/cima/publico/home.html" isExternal>
-          CIMA Official Website <FaSyringe />
+          Sitio Web Oficial de CIMA <FaSyringe />
         </Link>
       </Box>
 
       <Box>
         <Text fontSize="lg" fontWeight="bold">
-          Please review all the information before submitting as the recommendations will be tailored to the provided data.
+          Por favor, revise toda la información antes de enviarla, ya que las recomendaciones se adaptarán a los datos proporcionados.
         </Text>
       </Box>
     </Box>
